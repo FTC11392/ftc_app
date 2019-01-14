@@ -161,7 +161,8 @@ public class IntakeSlide extends Encoder {
     }
 
     public void upFlip() {
-        intakeFlip.setPower(0.7);
+        intakeFlip.setPower(0.7
+        );
     }
 
     public void downFlip() {

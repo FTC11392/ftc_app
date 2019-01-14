@@ -162,7 +162,7 @@ public class DriveAutoRight extends LinearOpMode {
         runtime.reset();
         tank.encoderMode(); //reset from runToPosition mode
         timeout = 1.5;
-        tank.encoderStrafe(STRAFE_SPEED, -20.0, runtime, timeout, true);
+        tank.encoderStrafe(STRAFE_SPEED, -22.0, runtime, timeout, true);
         while (opModeIsActive() && (runtime.seconds() < timeout)) {
             telemetry.addData("Landing Run Strafe", "Leg 1: %2.5f S Elapsed", runtime.seconds());
             telemetry.update();
@@ -206,7 +206,7 @@ public class DriveAutoRight extends LinearOpMode {
         runtime.reset();
         tank.encoderMode();
         timeout = 1.5; //1.0;
-        tank.encoderStrafe(STRAFE_SPEED, -14.0, runtime, timeout, true);
+        tank.encoderStrafe(STRAFE_SPEED, -22.0, runtime, timeout, true);
         while (opModeIsActive() && (runtime.seconds() < timeout)) {
             telemetry.addData("Path to depot 1", "Leg 1: %2.5f S Elapsed", runtime.seconds());
             telemetry.update();
@@ -217,7 +217,7 @@ public class DriveAutoRight extends LinearOpMode {
         runtime.reset();
         tank.encoderMode();
         timeout = 1.5; //1.0;
-        tank.encoderStrafe(STRAFE_SPEED, 13.0, runtime, timeout, true);
+        tank.encoderStrafe(STRAFE_SPEED, 21.0, runtime, timeout, true);
         while (opModeIsActive() && (runtime.seconds() < timeout)) {
             telemetry.addData("Path to depot 1", "Leg 1: %2.5f S Elapsed", runtime.seconds());
             telemetry.update();
@@ -250,7 +250,7 @@ public class DriveAutoRight extends LinearOpMode {
         runtime.reset();
         tank.encoderMode();
         timeout = 1.5; //1.0;
-        tank.encoderStrafe(STRAFE_SPEED, -9.0, runtime, timeout, true);
+        tank.encoderStrafe(STRAFE_SPEED, 9.0, runtime, timeout, true);
         while (opModeIsActive() && (runtime.seconds() < timeout)) {
             telemetry.addData("Path to depot 1", "Leg 1: %2.5f S Elapsed", runtime.seconds());
             telemetry.update();
@@ -265,7 +265,7 @@ public class DriveAutoRight extends LinearOpMode {
         // Driving to depot:  Drive Backwards for 48 inches ---------------------------------------
         runtime.reset();
         timeout = 2.0; // 6.0;
-        tank.encoderDrive(FORWARD_SPEED, 57.00, runtime, timeout, true);
+        tank.encoderDrive(FORWARD_SPEED, 59.00, runtime, timeout, true);
         while (opModeIsActive() && tank.isBusy() && runtime.seconds() < timeout ) {
             telemetry.addData("Path to depot 3: ", "%2.5f S Elapsed", runtime.seconds());
             telemetry.update();
@@ -295,7 +295,7 @@ public class DriveAutoRight extends LinearOpMode {
         // Parking encoder drive. -----------------------------------------------------------------
         runtime.reset();
         timeout = 5.0; //5.0;
-        tank.encoderDrive(FORWARD_SPEED, -53.00, runtime, timeout, true);
+        tank.encoderDrive(FORWARD_SPEED, -58.00, runtime, timeout, true);
         while (opModeIsActive() && tank.isBusy() && runtime.seconds() < timeout) {
             telemetry.addData("Parking ", "Leg 3: %2.5f S Elapsed", runtime.seconds());
             telemetry.update();
